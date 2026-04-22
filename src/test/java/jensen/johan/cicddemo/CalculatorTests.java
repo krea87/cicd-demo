@@ -48,4 +48,10 @@ public class CalculatorTests {
         //happy path
         assertEquals(2, calculator.divide(10, 5), DELTA);
     }
+
+    @Test
+    void divideByZero(){
+
+        assertEquals(2, calculator.divide(10, 0), DELTA);
+    }
 }
