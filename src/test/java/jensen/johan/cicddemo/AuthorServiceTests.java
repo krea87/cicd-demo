@@ -26,6 +26,7 @@ public class AuthorServiceTests {
     @BeforeEach
     public void setup(){
         author = new Author("Johan", "Nihlén", "johan.nihlen@mail.se");
+        authorService.save(author);
     }
 
     @Test
